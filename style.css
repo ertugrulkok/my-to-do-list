@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    
+    width: 30%;
+    background-color: brown;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    border-radius: 20px;
+   
+}
+input, button {
+    display: block;
+}
+
+h1, h2, h3, h4, p{
+margin-bottom: 1rem;   
+}
+
+div{
+    /* width: 50%; */
+    /* display: flex; */
+    justify-content: center;
+}
+
+
+
+.input_container{
+    width: 100;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.input_container >*{
+ padding: 1rem 1rem;
+ font-size: 1rem;   
+}
+
+#myTodo{
+
+outline: none;    
+
+}
+#myTodo::placeholder{
+    font-style: italic;
+}
+.addTodoBtn{
+    font-weight: bold;
+    background-color: rgb(30, 177, 10);
+    color: beige;
+    border: none;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    width: 100%;
+    
+}
+li{
+    
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid black;
+    background-color: gray;
+    list-style-type: none;
+    display: flex;
+    border-radius: 5px;
+}
+ul li:nth-child(even){
+    background-color: rgb(224, 214, 214);
+}
+
+ul li:hover{
+    background-color: white;
+    transition: all 300ms;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    transform: translateY(-5px);    }
+ul li.checked{
+    background-color: green;
+    text-decoration: line-through;
+}
+.close{
+    position: absolute ;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   
+
+}
+.remove_btn{
+    background-color:rgb(30, 177, 10);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    display: none;
+}
